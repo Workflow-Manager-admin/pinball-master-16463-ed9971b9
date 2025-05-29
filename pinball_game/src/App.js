@@ -1,34 +1,31 @@
 import React from 'react';
 import './App.css';
+import PinballMaster from './PinballMaster';
 
+// PUBLIC_INTERFACE
 function App() {
   return (
-    <div className="app">
+    <div className="app" style={{ background: "#1a1a2e" }}>
       <nav className="navbar">
         <div className="container">
           <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
             <div className="logo">
-              <span className="logo-symbol">*</span> KAVIA AI
+              <span className="logo-symbol">*</span> Pinball Master
             </div>
-            <button className="btn">Template Button</button>
+            <a
+              href="https://github.com"
+              className="btn"
+              style={{ background: "#e94560", color: "#fff", textDecoration: 'none' }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source Code
+            </a>
           </div>
         </div>
       </nav>
-
       <main>
-        <div className="container">
-          <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
-            
-            <h1 className="title">pinball_game</h1>
-            
-            <div className="description">
-              Start building your application.
-            </div>
-            
-            <button className="btn btn-large">Button</button>
-          </div>
-        </div>
+        <PinballMaster />
       </main>
     </div>
   );
